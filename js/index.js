@@ -1,20 +1,11 @@
-(function () {
-  var a = (b = 5);
-})();
-console.log(b);
+const labels = document.querySelectorAll('.form-control label');
 
-(function () {
-  console.log(1);
-  setTimeout(() => console.log(2), 1000);
-  setTimeout(() => console.log(3), 0);
-  Promise.resolve(true).then(() => console.log(4));
-  console.log(5);
-})();
-
-try {
-  setTimeout(function () {
-    throw new Error();
-  }, 1000);
-} catch (e) {
-  console.log(e);
-}
+labels.forEach((label) => {
+  label.innerHTML = label.innerText
+    .split('')
+    .map(
+      (letter, i) =>
+        `<span style="transition-delay:${i * 50}ms">${letter}</span>`
+    )
+    .join('');
+});
