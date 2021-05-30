@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
   box-sizing: border-box;
@@ -11,6 +11,67 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Muli',sans-serif;
+  background-color: steelblue;
+  color: #fff;
   overflow: hidden;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  background-color: lightblue;
+  border: none;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.form-control {
+  position: relative;
+  width: 300px;
+  margin: 20px 0 40px;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 1px #fff solid;
+}
+
+.form-control input:focus, 
+.form-control input:valid, 
+.btn:focus {
+  outline: none;
 }
